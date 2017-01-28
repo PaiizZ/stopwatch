@@ -1,9 +1,10 @@
 package stopwatch;
 
 /**
- * Created by PaiizZ on 1/27/2017 AD.
+ * SumDuble, this is task to measure the elapsed time between summation the values type Double object.
+ * @author Wanchanapon Thanwaranurak
+ * @version 1/27/2017 AD.
  */
-
 public class SumDouble implements Runnable{
     /** The array type Double object. */
     private Double[] values = new Double[TaskTimer.ARRAY_SIZE];
@@ -14,6 +15,9 @@ public class SumDouble implements Runnable{
         TaskTimer.count = count ;
     }
 
+    /**
+     * to run this task that summation the array of Double object.
+     */
     public void run() {
         /** create array of values to add, before we start the timer. */
         for(int i=0; i<TaskTimer.ARRAY_SIZE; i++) values[i] = new Double(i+1);
@@ -24,6 +28,10 @@ public class SumDouble implements Runnable{
         }
     }
 
+    /**
+     * To print the describes the task and a constructor to initialize the task.
+     * @return a string of information and count.
+     */
     public String toString(){
         return String.format("Sum array of Double objects with count=%,d\n", TaskTimer.count);
     }

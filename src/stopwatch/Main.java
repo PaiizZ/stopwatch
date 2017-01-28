@@ -9,9 +9,9 @@ public class Main {
 
         taskTimer.measureAndPrint(new AppendToString(100000));
         taskTimer.measureAndPrint(new AppendToStringBuilder(100000));
-        taskTimer.measureAndPrint(new SumDoublePrimitive(1000000000));
-        taskTimer.measureAndPrint(new SumDouble(1000000000));
-        taskTimer.measureAndPrint(new SumBigDecimal(1000000000));
+        taskTimer.measureAndPrint(new SumDoublePrimitive(300));
+        taskTimer.measureAndPrint(new SumDouble(300));
+        taskTimer.measureAndPrint(new SumBigDecimal(300));
 
     }
 }
