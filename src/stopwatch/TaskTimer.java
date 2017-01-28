@@ -21,6 +21,11 @@ public class TaskTimer {
     public static int count = 0;
 
     /**
+     * The result String of combining CHAR.
+     * */
+    public static String sum = "";
+
+    /**
      * Create timer for use StopWatch.
      * */
     public static Stopwatch timer = new Stopwatch();
@@ -35,6 +40,7 @@ public class TaskTimer {
         timer.start();
         runnable.run();
         timer.stop();
+        System.out.println(runnable.sumPrint());
         System.out.printf("Elapsed time %.6f sec\n\n",timer.getElapsed());
     }
 
