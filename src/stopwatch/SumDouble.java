@@ -2,6 +2,8 @@ package stopwatch;
 
 /**
  * SumDuble, this is task to measure the elapsed time between summation the values type Double object.
+ * You can change the count of a counter.
+ *
  * @author Wanchanapon Thanwaranurak
  * @version 1/27/2017 AD.
  */
@@ -18,6 +20,7 @@ public class SumDouble implements Runnable {
     /**
      * Constructor for a new SumDouble.
      * Set new count for run in loop.
+     *
      * @param count is the counter, type is int
      */
     public SumDouble(int count) {
@@ -37,9 +40,9 @@ public class SumDouble implements Runnable {
      * to run this task that summation the array of Double object.
      */
     public void run() {
-        /** create array of values to add, before we start the timer. */
+        // create array of values to add, before we start the timer.
         for (int i = 0; i < TaskTimer.ARRAY_SIZE; i++) values[i] = new Double(i + 1);
-        /** count = loop counter, i = array index */
+        // count = loop counter, i = array index
         for (int count = 0, i = 0; count < TaskTimer.count; count++, i++) {
             if (i >= TaskTimer.ARRAY_SIZE) i = 0;
             sum = sum + values[i];
@@ -48,6 +51,7 @@ public class SumDouble implements Runnable {
 
     /**
      * To print the describes the task and a constructor to initialize the task.
+     *
      * @return a string of information and count.
      */
     public String toString() {
