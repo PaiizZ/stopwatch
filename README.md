@@ -12,9 +12,8 @@ Add 1 billion double objects using array      | 6.214105 sec
 Add 1 billion BigDecimal objects using array  | 10.759961 sec
 
 ## The result of SpeedTest tasks
-<<<<<<< HEAD
 
-
+The result                                                           |
 --------------------------------------------------------------------:|
 Append 50,000 chars to String                                        |
                                                                      |
