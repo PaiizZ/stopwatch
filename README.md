@@ -1,5 +1,7 @@
 # Stopwatch tasks by Wanchanapon Thanwaranurak (5710546607)
+
 I ran the tasks on a MacBook Air (13-inch, Early 2015) , and got these results:
+
 Task                                          | Time
 :---------------------------------------------|-------------:
 Append 50,000 chars to String                 | 2.276261 sec
@@ -10,6 +12,7 @@ Add 1 billion double objects using array      | 6.214105 sec
 Add 1 billion BigDecimal objects using array  | 10.759961 sec
 
 ## The result of SpeedTest tasks
+<<<<<<< HEAD
 
 
 --------------------------------------------------------------------:|
@@ -66,6 +69,6 @@ Elapsed time 10.759961 sec                                           |
 * Explain difference in time to sum double, Double, and BigDecimal. Which is faster and why?
 
 * why is there such a big difference in the time used to append chars to a String and to a StringBuilder?
-Even though we eventually "copy" the StringBuilder into a String so the final result is the same.
+  Even though we eventually "copy" the StringBuilder into a String so the final result is the same.
 
 * why is there a significant difference in times to sum double, Double, and BigDecimal values?
