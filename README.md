@@ -20,9 +20,13 @@ final string length = 50000
 Elapsed time 2.276261 sec
 
 
+
 Append 100,000 chars to String
+
 final string length = 100000
+
 Elapsed time 2.849177 sec 
+
 
 
 Append 100,000 chars to StringBuilder
