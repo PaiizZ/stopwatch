@@ -1,7 +1,7 @@
 # Stopwatch tasks by Wanchanapon Thanwaranurak (5710546607)
 I ran the tasks on a MacBook Air (13-inch, Early 2015) , and got these results:
 Task                                          | Time
-----------------------------------------------|---------------:
+:----------------------------------------------|---------------:
 Append 50,000 chars to String                 | 2.276261 sec
 Append 100,000 chars to String                | 2.849177 sec
 Append 100,000 chars to StringBuilder         | 0.002406 sec
@@ -11,9 +11,9 @@ Add 1 billion BigDecimal objects using array  | 10.759961 sec
 
 ## The result of SpeedTest tasks
 
-Append 50,000 chars to String 
-final string length = 50000 
-Elapsed time 2.276261 sec
+> Append 50,000 chars to String 
+> final string length = 50000 
+> Elapsed time 2.276261 sec
 
 Append 100,000 chars to String 
 final string length = 100000 
