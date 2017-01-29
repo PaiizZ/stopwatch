@@ -1,7 +1,9 @@
 # Stopwatch tasks by Wanchanapon Thanwaranurak (5710546607)
+
 I ran the tasks on a MacBook Air (13-inch, Early 2015) , and got these results:
+
 Task                                          | Time
-:----------------------------------------------|---------------:
+:---------------------------------------------|---------------:
 Append 50,000 chars to String                 | 2.276261 sec
 Append 100,000 chars to String                | 2.849177 sec
 Append 100,000 chars to StringBuilder         | 0.002406 sec
