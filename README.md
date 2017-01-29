@@ -14,7 +14,9 @@ Add 1 billion BigDecimal objects using array  | 10.759961 sec
 ## The result of SpeedTest tasks
 
 Append 50,000 chars to String
+
 final string length = 50000
+
 Elapsed time 2.276261 sec
 
 
@@ -24,7 +26,9 @@ Elapsed time 2.849177 sec
 
 
 Append 100,000 chars to StringBuilder
+
 final string length = 100000
+
 Elapsed time 0.002406 sec
 
 
