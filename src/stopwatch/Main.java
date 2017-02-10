@@ -1,7 +1,10 @@
 package stopwatch;
 
 /**
- * Created by PaiizZ on 1/27/2017 AD.
+ * Main is test class of speed time for each other class.
+ *
+ * @author Wanchanapon Thanwaranurak
+ * @version 1/27/2017 AD.
  */
 public class Main {
     public static void main(String[] arg) {

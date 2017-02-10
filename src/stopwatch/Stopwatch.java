@@ -1,8 +1,14 @@
 package stopwatch;
 
+
 /**
- * Created by PaiizZ on 1/27/2017 AD.
+ * A StopWatch that measures elapsed time between a starting time
+ * and stopping time, or until the present time.
+ *
+ * @author Wanchanapon Thanwaranurak
+ * @version 1/27/2017 AD.
  */
+
 public class Stopwatch {
 
     /**
@@ -36,7 +42,6 @@ public class Stopwatch {
 
     /**
      * Start the Stopwatch.
-     *
      */
     public void start() {
         if (!isRunning()) {
@@ -48,7 +53,6 @@ public class Stopwatch {
 
     /**
      * Stop the Stopwacth.
-     *
      */
     public void stop() {
         if (isRunning()) {

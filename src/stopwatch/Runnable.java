@@ -1,7 +1,10 @@
 package stopwatch;
 
 /**
- * Created by PaiizZ on 1/28/2017 AD.
+ * Runnable for create of method that use same of evey class.
+ *
+ * @author Wanchanapon Thanwaranurak
+ * @version 1/27/2017 AD.
  */
 public interface Runnable {
     /**
