@@ -27,14 +27,6 @@ public class SumDoublePrimitive implements Runnable {
         TaskTimer.count = count;
     }
 
-    /**
-     * to print values of the summation result.
-     *
-     * @return String that refer to this summation result.
-     */
-    public String sumPrint() {
-        return "sum = " + sum;
-    }
 
     /**
      * to run this task that summation the array of DoublePrimitive object.
@@ -45,7 +37,7 @@ public class SumDoublePrimitive implements Runnable {
         // count = loop counter, i = array index
         for (int count = 0, i = 0; count < TaskTimer.count; count++, i++) {
             if (i >= TaskTimer.ARRAY_SIZE) i = 0;
-            sum = sum + values[i];
+            this.sum = this.sum + values[i];
         }
     }
 
@@ -55,6 +47,6 @@ public class SumDoublePrimitive implements Runnable {
      * @return a string of information and count.
      */
     public String toString() {
-        return String.format("Sum array of double primitives with count=%,d", TaskTimer.count);
+        return String.format("Sum array of double primitives with count=%,d\nSum = " + this.sum, TaskTimer.count);
     }
 }

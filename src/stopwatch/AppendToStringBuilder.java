@@ -23,14 +23,6 @@ public class AppendToStringBuilder implements Runnable {
         TaskTimer.count = count;
     }
 
-    /**
-     * To print length of the StringBuilder.
-     *
-     * @return a string of last StringBuilder result length.
-     */
-    public String sumPrint() {
-        return "final string length = " + builder.toString().length();
-    }
 
     /**
      * to run this task that combining CHAR to StringBuilder.
@@ -48,6 +40,6 @@ public class AppendToStringBuilder implements Runnable {
      * @return a string of information and count.
      */
     public String toString() {
-        return String.format("Append %,d chars to StringBuilder", TaskTimer.count);
+        return String.format("Append %,d chars to StringBuilder", TaskTimer.count) + String.format("final string length = " + this.builder.length());
     }
 }

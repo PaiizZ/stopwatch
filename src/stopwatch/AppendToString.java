@@ -8,6 +8,9 @@ package stopwatch;
  * @version 1/27/2017 AD.
  */
 public class AppendToString implements Runnable {
+
+    private String result;
+
     /**
      * Constructor for a new AppendToString.
      * Set new count for run in loop.
@@ -15,6 +18,7 @@ public class AppendToString implements Runnable {
      * @param count is the counter, type is int
      */
     public AppendToString(int count) {
+        this.result = "";
         TaskTimer.count = count;
     }
 
@@ -22,20 +26,10 @@ public class AppendToString implements Runnable {
      * to run this task that combining CHAR to String.
      */
     public void run() {
-        TaskTimer.sum = "";
         int k = 0;
         while (k++ < TaskTimer.count) {
-            TaskTimer.sum = TaskTimer.sum + TaskTimer.CHAR;
+            this.result = this.result + TaskTimer.CHAR;
         }
-    }
-
-    /**
-     * To print length of the string.
-     *
-     * @return a string of last string result length.
-     */
-    public String sumPrint() {
-        return "final string length = " + TaskTimer.sum.length();
     }
 
     /**
@@ -44,7 +38,7 @@ public class AppendToString implements Runnable {
      * @return a string of information and count.
      */
     public String toString() {
-        return String.format("Append %,d chars to String", TaskTimer.count);
+        return String.format("Append %,d chars to String\n", TaskTimer.count) + String.format("final string length = " + this.result.length());
     }
 
 }
